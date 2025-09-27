@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>School Game</title>
+    <style>
+        body { font-family: Arial; text-align: center; margin-top: 50px; }
+        #coin { font-size: 24px; margin-top: 20px; }
+        button { font-size: 20px; padding: 10px 20px; }
+    </style>
+</head>
+<body>
+    <h1>🎮 Maktab Reyting O‘yini</h1>
+    <p id="coin">Coinlar: 0</p>
+    <button onclick="addCoin()">+1 Coin yig‘ish</button>
+
+    <script>
+        let coins = 0;
+        function addCoin() {
+            coins++;
+            document.getElementById("coin").innerText = "Coinlar: " + coins;
+        }
+    </script>
+</body>
+</html>
